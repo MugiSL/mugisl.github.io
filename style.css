@@ -12,7 +12,8 @@ section {
 }
 
 .card-body {
-  background-color: #000000;
+  background-color: #ffffff;
+  color: black;
 }
 
 .gallery-img {
@@ -21,4 +22,93 @@ section {
 
 #gallery .row > * {
   padding: 0;
+}
+
+/* Pendidikan */
+
+.pendidikan-box {
+  position: relative;
+  background-color: #5d5d5e;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.pendidikan-box::before {
+  content: "My";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pendidikan-box:hover::before {
+  opacity: 0.2;
+}
+
+.pendidikan-box::after {
+  content: "Pendidikan";
+  position: absolute;
+  color: #fff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pendidikan-box:hover::after {
+  opacity: 0.2;
+}
+
+.pendidikan-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.pendidikan-box:hover .pendidikan-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.pendidikan-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pendidikan-box:hover .pendidikan-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.pendidikan-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 90px);
+  max-width: 200px;
+}
+
+.pendidikan-box:hover .pendidikan-img {
+  transform: translate3d(-50%, -52%, 90px) scale(1.2);
 }
