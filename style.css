@@ -53,7 +53,7 @@ section {
 }
 
 .pendidikan-box::after {
-  content: "Pendidikan";
+  content: "Education";
   position: absolute;
   color: #fff;
   font-size: 4em;
